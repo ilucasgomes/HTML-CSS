@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th, td {
             border: 1px solid black;
@@ -20,11 +21,19 @@
             background-color: lightslategray;
             color: azure;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightslategray;
+        }
         caption {
             font-size: 1.5em;
             font-weight: bolder;
             padding: 10px;
             background-color: rgba(119, 136, 153, 0.466);
+        }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
         }
         td.num {
             text-align: right;
@@ -39,8 +48,8 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -67,10 +76,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td class="num">0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">110 659 804</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam. Quibusdam dolores quas a, ipsam omnis quam. Quibusdam, recusandae error! Earum iure nihil et rem in modi nemo impedit ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a autem architecto consequuntur fuga distinctio dolores fugit. Ea doloremque molestias asperiores incidunt voluptates corrupti reprehenderit at, aut, suscipit earum enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum dignissimos aspernatur iure nam, alias eos aliquam fugit explicabo provident neque molestias asperiores rem tempore distinctio earum, totam, beatae eius! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minima et ullam enim aspernatur deserunt officia dolorem sed eveniet? Magni eveniet fugit blanditiis reiciendis doloremque ullam necessitatibus magnam, totam rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam. Quibusdam dolores quas a, ipsam omnis quam. Quibusdam, recusandae error! Earum iure nihil et rem in modi nemo impedit ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a autem architecto consequuntur fuga distinctio dolores fugit. Ea doloremque molestias asperiores incidunt voluptates corrupti reprehenderit at, aut, suscipit earum enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum dignissimos aspernatur iure nam, alias eos aliquam fugit explicabo provident neque molestias asperiores rem tempore distinctio earum, totam, beatae eius! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minima et ullam enim aspernatur deserunt officia dolorem sed eveniet? Magni eveniet fugit blanditiis reiciendis doloremque ullam necessitatibus magnam, totam rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam. Quibusdam dolores quas a, ipsam omnis quam. Quibusdam, recusandae error! Earum iure nihil et rem in modi nemo impedit ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a autem architecto consequuntur fuga distinctio dolores fugit. Ea doloremque molestias asperiores incidunt voluptates corrupti reprehenderit at, aut, suscipit earum enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum dignissimos aspernatur iure nam, alias eos aliquam fugit explicabo provident neque molestias asperiores rem tempore distinctio earum, totam, beatae eius! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minima et ullam enim aspernatur deserunt officia dolorem sed eveniet? Magni eveniet fugit blanditiis reiciendis doloremque ullam necessitatibus magnam, totam rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam. Quibusdam dolores quas a, ipsam omnis quam. Quibusdam, recusandae error! Earum iure nihil et rem in modi nemo impedit ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat a autem architecto consequuntur fuga distinctio dolores fugit. Ea doloremque molestias asperiores incidunt voluptates corrupti reprehenderit at, aut, suscipit earum enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum dignissimos aspernatur iure nam, alias eos aliquam fugit explicabo provident neque molestias asperiores rem tempore distinctio earum, totam, beatae eius! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minima et ullam enim aspernatur deserunt officia dolorem sed eveniet? Magni eveniet fugit blanditiis reiciendis doloremque ullam necessitatibus magnam, totam rem.</p>
+    
 </body>
 </html>
